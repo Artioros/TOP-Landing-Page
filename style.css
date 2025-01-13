@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  height: 70px;
+  height: 80px;
   display: flex;
   align-items: center;
 }
@@ -36,7 +36,7 @@ header img {
   color: #f9faf8;
   font-size: 28px;
   font-weight: 600;
-  margin-left: -40px;
+  margin-left: -30px;
 }
 
 .header-left-section {
@@ -62,14 +62,14 @@ header div {
   margin-left: auto;
   margin-right: 90px;
   display: flex;
-  gap: 70px;
+  gap: 50px;
 }
 
 .first-section {
   width: 100vw;
   display: flex;
   justify-content: center;
-  height: 480px;
+  height: 500px;
 }
 
 .first-section-div {
