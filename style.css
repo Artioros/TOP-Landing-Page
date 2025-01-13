@@ -13,13 +13,18 @@
 
 body {
   font-family: "Roboto", serif;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   height: 70px;
-  background: #1f2937;
   display: flex;
   align-items: center;
+}
+
+header, .first-section {
+  background: #1f2937;
 }
 
 header img {
@@ -48,3 +53,25 @@ header div {
   display: flex;
   gap: 70px;
 }
+
+.first-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.first-section-div {
+  color: white;
+  width: 80%;
+  display: flex;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.first-section-inner-div {
+  width: 50%;
+}
+
+/* This is where i left off, trying to understand why the two divs inside the .first-section get pushed to the left when i set their width to 50%. For all i know they should be aligned to the center since i have used justify-content on the .first-section. Although it seems to work as intended if i just use margin:auto for both left and right instead of using justify-content */
+
+/* I had an epiphany while falling asleep and was able to understand the reason for the behavior described in my previous comment. The section involving the two divs wasn't centralized itself, it was pushed to the left itselft, that's why when i give the two divs 50% of the parent's width (the section) they also get pushed to the side. I solved that problem by involving the two divs in yet another div, and giving the section a width of 100vw and centralizing it. This way the two divs are also naturally centralized in the page.*/
